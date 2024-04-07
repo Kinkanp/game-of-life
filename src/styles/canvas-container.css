@@ -1,0 +1,8 @@
+.canvas-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - var(--closed-panel-width));
+    height: calc(100% - var(--control-panel-height));
+    background-color: var(--main-color);
+}

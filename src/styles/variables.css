@@ -1,0 +1,9 @@
+:root {
+    --closed-panel-width: 50px;
+    --control-panel-height: 45px;
+    --main-color: '';
+    --grid-lines: '';
+    --cell-alive: '';
+    --cell-dead: '';
+    --button-border-color: '';
+}

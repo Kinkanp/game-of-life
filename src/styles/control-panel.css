@@ -1,0 +1,50 @@
+.control-panel {
+    display: flex;
+    align-items: center;
+    width: calc(100% - var(--closed-panel-width));
+    height: var(--control-panel-height);
+    background: var(--main-color);
+    grid-gap: 20px;
+    padding: 0 20px;
+}
+
+.theme-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    grid-gap: 10px;
+    color: #fff;
+}
+
+.control-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    padding: 0 10px;
+    height: 32px;
+    position: relative;
+    transition: 0.1s transform ease-in-out;
+    color: #fff;
+}
+
+.control-button:before {
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border: 3px dashed var(--button-border-color);
+}
+
+.control-button:hover {
+    transform: scale(1.1);
+}
+
+
