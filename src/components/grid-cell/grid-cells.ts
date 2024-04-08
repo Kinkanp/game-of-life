@@ -25,13 +25,13 @@ export class GridCells {
       for (let j = 0; j < this.grid[i].length; j++) {
         this.drawCell(this.grid[i][j]);
 
-        // this.ctx.fillText(`${i};${j}`, x, y);
+        // this.ctx.fillText(`${i};${j}`, this.grid[i][j].x, this.grid[i][j].y);
         // const { x, y } = this.grid[i][j];
         // if (this.grid[i][j].type) {
-          // this.ctx.fillText(`${i};${j}`, x, y);
-          // this.ctx.fillStyle = '#000';
-          // this.ctx.font = '20px serif';
-          // console.log('i', i, 'j', j, 'type', this.grid[i][j].type);
+        //   this.ctx.fillText(`${i};${j}`, x, y);
+        //   this.ctx.fillStyle = '#000';
+        //   this.ctx.font = '20px serif';
+        //   console.log('i', i, 'j', j, 'type', this.grid[i][j].type);
         // }
       }
     }

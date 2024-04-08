@@ -4,20 +4,14 @@ import { CellType } from './constants';
 export type Figure = CellType[][];
 
 interface Params {
-  width: number;
-  height: number;
   grid: IGrid;
 }
 
 export class FigurePlacer {
   private grid: IGrid;
-  private width: number;
-  private height: number;
 
-  constructor({ width, height, grid }: Params) {
+  constructor({ grid }: Params) {
     this.grid = grid;
-    this.width = width;
-    this.height = height;
   }
 
   public place(figure: Figure): void {
@@ -38,7 +32,7 @@ export class FigurePlacer {
         const figureI = i - startI;
         const figureJ = j - startJ;
 
-        this.grid[i][j].type = figure[figureJ][figureI] || CellType.dead;
+        this.grid[i][j].type = figure[figureJ][figureI] ? CellType.live : CellType.dead;
       }
     }
   }

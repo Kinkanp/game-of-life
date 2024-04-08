@@ -58,5 +58,12 @@
 }
 
 .figures-list {
-    padding: 0 10px;
+    padding: 0 10px 30px;
+    height: 100vh;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.figures-list p {
+    cursor: pointer;
 }

@@ -4,8 +4,8 @@ export enum CellType {
 }
 
 export const Config = {
-    cellSize: 15,
-    cellsCount: 80,
+    cellSize: 30,
+    cellsCount: 80, // unused ?
     gridCell: {
         empty: CellType.dead,
         live: CellType.live,

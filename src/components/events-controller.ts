@@ -6,6 +6,7 @@ export enum Event {
   resize = 'resize',
   changeTheme = 'changeTheme',
   onThemeChanged = 'onThemeChanged',
+  figureSelected = 'figureSelected',
 }
 
 type UnsubscribeFn = () => void;
@@ -25,7 +26,7 @@ class EventsController {
     }
 
     console.log('RUNNING ATTACHED LISTENERS FOR EVENT: ', event, listeners.length);
-    listeners.forEach(listener => listener(rest));
+    listeners.forEach(listener => listener(...rest));
   }
 
   public register(event: Event, callback: Function): UnsubscribeFn {
